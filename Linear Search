@@ -1,0 +1,20 @@
+class Main {
+    public static void main(String[] args) {
+        int[] Values ={10,20,40,50,60};
+        int target = 60;
+        int answer = LinearSearch(Values, target);
+        System.out.println(answer); 
+    }
+    static int LinearSearch(int[] arr, int SearchValue){
+        if(arr.length == 0){
+            return -1;
+        }
+        for(int index = 0;index < arr.length;index++){
+            if(SearchValue==arr[index]){
+                return index;
+            }
+        }
+        return -1;
+    }
+
+}
